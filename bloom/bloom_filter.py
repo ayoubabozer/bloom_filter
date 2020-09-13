@@ -258,7 +258,7 @@ class BloomFilter():
         """
 
         if(not isinstance(item, (str, int, float))):
-             raise ValueError("Item must be str, int or float.")
+             raise TypeError("Item must be str, int or float.")
 
 
     def validate_vector(self, vector:object):
@@ -273,7 +273,7 @@ class BloomFilter():
         """
 
         if(not isinstance(vector, list)):
-             raise ValueError("Vector must be of type list.")
+             raise TypeError("Vector must be of type list.")
 
     def add(self, item:object):
 
