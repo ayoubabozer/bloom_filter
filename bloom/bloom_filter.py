@@ -64,7 +64,7 @@ class BitArray():
             raise ValueError("size of BitArray must be greater than 0.")
 
         self.size = size
-        self.arr = np.zeros(self.size, dtype=int)
+        self.arr = np.zeros(self.size, dtype=np.bool)
 
 
     def fill(self, index:int):
